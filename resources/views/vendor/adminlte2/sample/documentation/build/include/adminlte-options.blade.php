@@ -1,4 +1,3 @@
-<section id="adminlte-options">
   <h2 class="page-header"><a href="#adminlte-options">AdminLTE Javascript Options</a></h2>
   <p class="lead">Modifying the options of AdminLTE's app.js can be done using one of the following ways.</p>
 
