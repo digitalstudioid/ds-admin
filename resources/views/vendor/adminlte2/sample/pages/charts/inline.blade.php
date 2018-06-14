@@ -1191,13 +1191,13 @@
     // Bar charts using inline values
     $('.sparkbar').sparkline('html', {type: 'bar'});
 
-    /*$('.barformat').sparkline([1, 3, 5, 3, 8], {
+    $('.barformat').sparkline([1, 3, 5, 3, 8], {
       type: 'bar',
-      tooltipFormat: '{{value:levels}} - {{value}}',
+      tooltipFormat: '@{{value:levels}} - @{{value}}',
       tooltipValueLookups: {
         levels: $.range_map({':2': 'Low', '3:6': 'Medium', '7:': 'High'})
       }
-    });*/
+    });
 
     // Tri-state charts using inline values
     $('.sparktristate').sparkline('html', {type: 'tristate'});
