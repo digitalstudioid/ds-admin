@@ -47,145 +47,267 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //ADMINLTE SAMPLE LINK
 Route::get('adminlte', function() {
-	return view('vendor.adminlte2.sample.index');
+	/* return view('vendor.adminlte2.sample.index', 
+		[
+		'pageTitle' 		=> 'Home 1', 
+		'pageDescription' 	=> 'Control Panel'
+		]); */
+
+	/* $data = array('pageTitle'		=> 'Home 1',
+                  'pageDescription' => 'Control Panel');
+	return view('vendor.adminlte2.sample.index')->with($data); */
+
+	/* return view('vendor.adminlte2.sample.index')
+		->with('pageTitle', 'Home 1')
+		->with('pageDescription', 'Control Panel'); */
+
+	$pageTitle			= 'Home 1';
+	$pageDescription	= 'Control Panel';
+	
+	return view('vendor.adminlte2.sample.index', compact('pageTitle', 'pageDescription'));
 });
 
 Route::get('adminlte/index2', function() {
-	return view('vendor.adminlte2.sample.index2');
+	$pageTitle			= 'Home 2';
+	$pageDescription	= 'Control Panel';
+
+	return view('vendor.adminlte2.sample.index2', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/calendar', function() {
-	return view('vendor.adminlte2.sample.pages.calendar');
+Route::get('adminlte/layout/top-nav', function() {
+	$pageTitle			= 'Top Nav Layout';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.layout.top-nav', compact('pageTitle', 'pageDescription'));
+});
+
+Route::get('adminlte/layout/boxed', function() {
+	$pageTitle			= 'Boxed Layout';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.layout.boxed', compact('pageTitle', 'pageDescription'));
+});
+
+Route::get('adminlte/layout/fixed', function() {
+	$pageTitle			= 'Fixed Layout';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.layout.fixed', compact('pageTitle', 'pageDescription'));
+});
+
+Route::get('adminlte/layout/collapsed-sidebar', function() {
+	$pageTitle			= 'Collapsed Sidebar Layout';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.layout.collapsed-sidebar', compact('pageTitle', 'pageDescription'));
 });
 
 Route::get('adminlte/widgets', function() {
-	return view('vendor.adminlte2.sample.pages.widgets');
+	$pageTitle			= 'Widgets';
+	$pageDescription	= 'Description here...';
+
+	return view('vendor.adminlte2.sample.pages.widgets', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/chartjs', function() {
-	return view('vendor.adminlte2.sample.pages.charts.chartjs');
+Route::get('adminlte/charts/chartjs', function() {
+	$pageTitle			= 'ChartJS';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.charts.chartjs', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/flot', function() {
-	return view('vendor.adminlte2.sample.pages.charts.flot');
+Route::get('adminlte/charts/morris', function() {
+	$pageTitle			= 'Morris Charts';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.charts.morris', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/inline', function() {
-	return view('vendor.adminlte2.sample.pages.charts.inline');
+Route::get('adminlte/charts/flot', function() {
+	$pageTitle			= 'Flot Charts';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.charts.flot', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/morris', function() {
-	return view('vendor.adminlte2.sample.pages.charts.morris');
+Route::get('adminlte/charts/inline', function() {
+	$pageTitle			= 'Inline Charts';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.charts.inline', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/404', function() {
-	return view('vendor.adminlte2.sample.pages.examples.404');
+Route::get('adminlte/UI/general', function() {
+	$pageTitle			= 'UI General';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.UI.general', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/500', function() {
-	return view('vendor.adminlte2.sample.pages.examples.500');
+Route::get('adminlte/UI/icons', function() {
+	$pageTitle			= 'UI Icons';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.UI.icons', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/blank', function() {
-	return view('vendor.adminlte2.sample.pages.examples.blank');
+Route::get('adminlte/UI/buttons', function() {
+	$pageTitle			= 'UI Buttons';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.UI.buttons', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/invoice-print', function() {
-	return view('vendor.adminlte2.sample.pages.examples.invoice-print');
+Route::get('adminlte/UI/sliders', function() {
+	$pageTitle			= 'UI Sliders';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.UI.sliders', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/invoice', function() {
-	return view('vendor.adminlte2.sample.pages.examples.invoice');
+Route::get('adminlte/UI/timeline', function() {
+	$pageTitle			= 'UI Timeline';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.UI.timeline', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/lockscreen', function() {
-	return view('vendor.adminlte2.sample.pages.examples.lockscreen');
+Route::get('adminlte/UI/modals', function() {
+	$pageTitle			= 'UI Modals';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.UI.modals', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/login', function() {
-	return view('vendor.adminlte2.sample.pages.examples.login');
+Route::get('adminlte/forms/general', function() {
+	$pageTitle			= 'General Form Elements';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.forms.general', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/pace', function() {
-	return view('vendor.adminlte2.sample.pages.examples.pace');
+Route::get('adminlte/forms/advanced', function() {
+	$pageTitle			= 'Advanced Form Elements';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.forms.advanced', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/profile', function() {
-	return view('vendor.adminlte2.sample.pages.examples.profile');
+Route::get('adminlte/forms/editors', function() {
+	$pageTitle			= 'Text Editors';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.forms.editors', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/register', function() {
-	return view('vendor.adminlte2.sample.pages.examples.register');
+Route::get('adminlte/tables/simple', function() {
+	$pageTitle			= 'Simple Tables';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.tables.simple', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/advanced', function() {
-	return view('vendor.adminlte2.sample.pages.forms.advanced');
+Route::get('adminlte/tables/data', function() {
+	$pageTitle			= 'Data Tables';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.tables.data', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/editors', function() {
-	return view('vendor.adminlte2.sample.pages.forms.editors');
+Route::get('adminlte/calendar', function() {
+	$pageTitle			= 'Calendar';
+	$pageDescription	= 'Description here...';
+
+	return view('vendor.adminlte2.sample.pages.calendar', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/general-forms', function() {
-	return view('vendor.adminlte2.sample.pages.forms.general');
+Route::get('adminlte/mailbox/mailbox', function() {
+	$pageTitle			= 'Mailbox';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.mailbox.mailbox', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/boxed', function() {
-	return view('vendor.adminlte2.sample.pages.layout.boxed');
+Route::get('adminlte/mailbox/compose', function() {
+	$pageTitle			= 'Mailbox Compose';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.mailbox.compose', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/collapsed-sidebar', function() {
-	return view('vendor.adminlte2.sample.pages.layout.collapsed-sidebar');
+Route::get('adminlte/mailbox/read-mail', function() {
+	$pageTitle			= 'Read Mail';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.mailbox.read-mail', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/fixed', function() {
-	return view('vendor.adminlte2.sample.pages.layout.fixed');
+Route::get('adminlte/examples/invoice', function() {
+	$pageTitle			= 'Invoice';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.examples.invoice', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/top-nav', function() {
-	return view('vendor.adminlte2.sample.pages.layout.top-nav');
+Route::get('adminlte/examples/invoice-print', function() {
+	$pageTitle			= 'Invoice-Print';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.examples.invoice-print', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/compose', function() {
-	return view('vendor.adminlte2.sample.pages.mailbox.compose');
+Route::get('adminlte/examples/profile', function() {
+	$pageTitle			= 'User Profile';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.examples.profile', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/mailbox', function() {
-	return view('vendor.adminlte2.sample.pages.mailbox.mailbox');
+Route::get('adminlte/examples/login', function() {
+	$pageTitle			= 'Login';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.examples.login', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/read-mail', function() {
-	return view('vendor.adminlte2.sample.pages.mailbox.read-mail');
+Route::get('adminlte/examples/register', function() {
+	$pageTitle			= 'Register';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.examples.register', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/data', function() {
-	return view('vendor.adminlte2.sample.pages.tables.data');
+Route::get('adminlte/examples/lockscreen', function() {
+	$pageTitle			= 'Lock Screen';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.examples.lockscreen', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/simple', function() {
-	return view('vendor.adminlte2.sample.pages.tables.simple');
+Route::get('adminlte/examples/404', function() {
+	$pageTitle			= '404 Error Page';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.examples.404', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/buttons', function() {
-	return view('vendor.adminlte2.sample.pages.UI.buttons');
+Route::get('adminlte/examples/500', function() {
+	$pageTitle			= '500 Error Page';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.examples.500', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/general-ui', function() {
-	return view('vendor.adminlte2.sample.pages.UI.general');
+Route::get('adminlte/examples/blank', function() {
+	$pageTitle			= 'Blank Page';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.examples.blank', compact('pageTitle', 'pageDescription'));
 });
 
-Route::get('adminlte/icons', function() {
-	return view('vendor.adminlte2.sample.pages.UI.icons');
-});
-
-Route::get('adminlte/modals', function() {
-	return view('vendor.adminlte2.sample.pages.UI.modals');
-});
-
-Route::get('adminlte/sliders', function() {
-	return view('vendor.adminlte2.sample.pages.UI.sliders');
-});
-
-Route::get('adminlte/timeline', function() {
-	return view('vendor.adminlte2.sample.pages.UI.timeline');
+Route::get('adminlte/examples/pace', function() {
+	$pageTitle			= 'Pace Page';
+	$pageDescription	= 'Description here...';
+	
+	return view('vendor.adminlte2.sample.pages.examples.pace', compact('pageTitle', 'pageDescription'));
 });

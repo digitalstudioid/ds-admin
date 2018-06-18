@@ -317,7 +317,7 @@
           </a>
         </li>
         <li class="treeview active">
-          <a href="mailbox.html">
+          <a href="{{ url('adminlte/mailbox/mailbox') }}">
             <i class="fa fa-envelope"></i> <span>Mailbox</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
@@ -325,14 +325,14 @@
           </a>
           <ul class="treeview-menu">
             <li>
-              <a href="mailbox.html">Inbox
+              <a href="{{ url('adminlte/mailbox/mailbox') }}">Inbox
                 <span class="pull-right-container">
                   <span class="label label-primary pull-right">13</span>
                 </span>
               </a>
             </li>
-            <li class="active"><a href="compose.html">Compose</a></li>
-            <li><a href="read-mail.html">Read</a></li>
+            <li class="active"><a href="{{ url('adminlte/mailbox/compose') }}">Compose</a></li>
+            <li><a href="{{ url('adminlte/mailbox/read-mail') }}">Read</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -415,7 +415,7 @@
     <section class="content">
       <div class="row">
         <div class="col-md-3">
-          <a href="mailbox.html" class="btn btn-primary btn-block margin-bottom">Back to Inbox</a>
+          <a href="{{ url('adminlte/mailbox/mailbox') }}" class="btn btn-primary btn-block margin-bottom">Back to Inbox</a>
 
           <div class="box box-solid">
             <div class="box-header with-border">
@@ -428,7 +428,7 @@
             </div>
             <div class="box-body no-padding">
               <ul class="nav nav-pills nav-stacked">
-                <li><a href="mailbox.html"><i class="fa fa-inbox"></i> Inbox
+                <li><a href="{{ url('adminlte/mailbox/mailbox') }}"><i class="fa fa-inbox"></i> Inbox
                   <span class="label label-primary pull-right">12</span></a></li>
                 <li><a href="#"><i class="fa fa-envelope-o"></i> Sent</a></li>
                 <li><a href="#"><i class="fa fa-file-text-o"></i> Drafts</a></li>
