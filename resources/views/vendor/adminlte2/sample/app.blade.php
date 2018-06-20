@@ -5,7 +5,7 @@
     @include('vendor.adminlte2.sample.partials.htmlheader')
 @show
 
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue @yield('bodyclass') sidebar-mini">
 <div class="wrapper">
 
   @include('vendor.adminlte2.sample.partials.mainheader')
