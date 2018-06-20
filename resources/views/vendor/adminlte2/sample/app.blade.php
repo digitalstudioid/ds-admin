@@ -19,7 +19,8 @@
     </section>
   </div>
   
-  @include('vendor.adminlte2.sample.partials.footer')  @include('vendor.adminlte2.sample.partials.controlsidebar')
+  @include('vendor.adminlte2.sample.partials.footer')
+  @include('vendor.adminlte2.sample.partials.controlsidebar')
 </div>
 
 @section('scripts')
