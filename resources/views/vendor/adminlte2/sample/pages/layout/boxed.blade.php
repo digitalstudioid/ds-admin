@@ -1,11 +1,11 @@
 @extends('vendor.adminlte2.sample.app')
 
+@section('bodyclass', 'layout-boxed')
+
 @section('contentheader_breadcrumb')
   <li><a href="#"> Layout Options</a></li>
   <li class="active">Boxed</li>
 @endsection
-
-@section('bodyclass', 'layout-boxed')
 
 @section('main-content')
   <div class="callout callout-info">
