@@ -29,14 +29,14 @@
       
       <li class="header">MAIN NAVIGATION</li>
       
-      <li class="active treeview menu-open">
+      <!-- <li class="treeview {{ Request::is('adminlte/') ? 'active' : null }}">
         <a href="#">
           <i class="fa fa-home"></i> <span>Home</span>
           <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
           </span>
         </a>
-        <ul class="treeview-menu">
+        <ul class="treeview-menu"> -->
           <!--
             <li class="{{ Request::is('/') ? 'active' : null }}">
             <li class="{{ Request::is('blogs') ? 'active' : null }}">
@@ -45,7 +45,7 @@
           -->
 
           <!-- <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Home v1</a></li> -->
-          <li class="{{ Request::is('adminlte') ? 'active' : null }}">
+          <!-- <li class="{{ Request::is('adminlte') ? 'active' : null }}">
             <a href="{{ url('adminlte') }}"><i class="fa fa-home"></i> Home v1</a>
           </li>
 
@@ -53,9 +53,17 @@
             <a href="{{ url('adminlte/index2') }}"><i class="fa fa-home"></i> Home v2</a>
           </li>
         </ul>
+      </li> -->
+
+      <li class="{{ Request::is('adminlte') ? 'active' : null }}">
+        <a href="{{ url('adminlte') }}"><i class="fa fa-home"></i> Home v1</a>
+      </li>
+
+      <li class="{{ Request::is('adminlte/index2') ? 'active' : null }}">
+        <a href="{{ url('adminlte/index2') }}"><i class="fa fa-home"></i> Home v2</a>
       </li>
       
-      <li class="treeview">
+      <li class="treeview {{ Request::is('adminlte/layout*') ? 'active' : null }}">
         <a href="#">
           <i class="fa fa-files-o"></i>
           <span>Layout Options</span>
@@ -91,7 +99,7 @@
         </a>
       </li>
       
-      <li class="treeview">
+      <li class="treeview {{ Request::is('adminlte/charts*') ? 'active' : null }}">
         <a href="#">
           <i class="fa fa-pie-chart"></i>
           <span>Charts</span>
@@ -118,7 +126,7 @@
         </ul>
       </li>
 
-      <li class="treeview">
+      <li class="treeview {{ Request::is('adminlte/UI*') ? 'active' : null }}">
         <a href="#">
           <i class="fa fa-laptop"></i>
           <span>UI Elements</span>
@@ -153,7 +161,7 @@
         </ul>
       </li>
 
-      <li class="treeview">
+      <li class="treeview {{ Request::is('adminlte/forms*') ? 'active' : null }}">
         <a href="#">
           <i class="fa fa-edit"></i> <span>Forms</span>
           <span class="pull-right-container">
@@ -175,7 +183,7 @@
         </ul>
       </li>
 
-      <li class="treeview">
+      <li class="treeview {{ Request::is('adminlte/tables*') ? 'active' : null }}">
         <a href="#">
           <i class="fa fa-table"></i> <span>Tables</span>
           <span class="pull-right-container">
@@ -214,7 +222,7 @@
         </a>
       </li> -->
 
-      <li class="treeview">
+      <li class="treeview {{ Request::is('adminlte/mailbox*') ? 'active' : null }}">
         <a href="#">
           <i class="fa fa-envelope"></i> <span>Mailbox</span>
           <span class="pull-right-container">
@@ -240,7 +248,7 @@
         </ul>
       </li>
 
-      <li class="treeview">
+      <li class="treeview {{ Request::is('adminlte/examples*') ? 'active' : null }}">
         <a href="#">
           <i class="fa fa-folder"></i> <span>Examples</span>
           <span class="pull-right-container">
