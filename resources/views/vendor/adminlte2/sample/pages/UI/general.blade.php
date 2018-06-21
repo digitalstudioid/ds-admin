@@ -36,7 +36,7 @@
 
 @section('contentheader_breadcrumb')
   <li><a href="#"> UI Elements</a></li>
-  <li class="active">xxx</li>
+  <li class="active">General</li>
 @endsection
 
 @section('main-content')
