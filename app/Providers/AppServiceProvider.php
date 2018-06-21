@@ -15,6 +15,8 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         schema::defaultStringLength(191);
+
+        $this->loadViewsFrom(__DIR__.'/../views/vendor/adminlte2', 'adminlte2');
     }
 
     /**
