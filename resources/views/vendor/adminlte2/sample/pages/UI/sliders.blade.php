@@ -1,10 +1,5 @@
 @extends('vendor.adminlte2.sample.app')
 
-@section('htmlheader_additional')
-  <!-- bootstrap slider -->
-  <link rel="stylesheet" href="{{ asset('plugins/bootstrap-slider/slider.css') }}">
-@endsection
-
 @section('contentheader_breadcrumb')
   <li><a href="#"> UI Elements</a></li>
   <li class="active">Sliders</li>

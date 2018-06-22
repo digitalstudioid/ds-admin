@@ -1,10 +1,5 @@
 @extends('vendor.adminlte2.sample.app')
 
-@section('htmlheader_additional')
-  <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="{{ asset('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') }}">
-@endsection
-
 @section('contentheader_breadcrumb')
   <li><a href="#"> Forms</a></li>
   <li class="active">Editors</li>

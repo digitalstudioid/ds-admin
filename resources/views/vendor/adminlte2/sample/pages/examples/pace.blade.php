@@ -1,10 +1,5 @@
 @extends('vendor.adminlte2.sample.app')
 
-@section('htmlheader_additional')
-  <!-- Pace style -->
-  <link rel="stylesheet" href="{{ asset('plugins/pace/pace.min.css') }}">
-@endsection
-
 @section('contentheader_breadcrumb')
   <li><a href="#"> Examples</a></li>
   <li class="active">Pace Page</li>

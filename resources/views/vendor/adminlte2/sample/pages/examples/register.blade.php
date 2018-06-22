@@ -1,10 +1,5 @@
 @extends('vendor.adminlte2.sample.auth')
 
-@section('htmlheader_additional')
-  <!-- iCheck -->
-  <link rel="stylesheet" href="{{ asset('plugins/iCheck/square/blue.css') }}">
-@endsection
-
 @section('bodyclass', 'register-page')
 
 @section('main-content')

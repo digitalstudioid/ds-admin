@@ -1,18 +1,5 @@
 @extends('vendor.adminlte2.sample.app')
 
-@section('htmlheader_additional')  
-  <!-- iCheck for checkboxes and radio inputs -->
-  <link rel="stylesheet" href="{{ asset('plugins/iCheck/all.css') }}">
-  <!-- Bootstrap Color Picker -->
-  <link rel="stylesheet" href="{{ asset('bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css') }}">
-  <!-- Bootstrap time Picker -->
-  <link rel="stylesheet" href="{{ asset('plugins/timepicker/bootstrap-timepicker.min.css') }}">
-  <!-- Select2 -->
-  <link rel="stylesheet" href="{{ asset('bower_components/select2/dist/css/select2.min.css') }}">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="{{ asset('dist/css/AdminLTE.min.css') }}">  
-@endsection
-
 @section('contentheader_breadcrumb')
   <li><a href="#"> Forms</a></li>
   <li class="active">Advanced Elements</li>

@@ -1,9 +1,5 @@
 @extends('vendor.adminlte2.sample.app')
 
-@section('htmlheader_additional')
-
-@endsection
-
 @section('contentheader_breadcrumb')
   <li><a href="#"> UI Elements</a></li>
   <li class="active">Timeline</li>

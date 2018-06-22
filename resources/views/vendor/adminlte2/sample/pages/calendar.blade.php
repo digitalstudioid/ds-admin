@@ -1,11 +1,5 @@
 @extends('vendor.adminlte2.sample.app')
 
-@section('htmlheader_additional')
-  <!-- fullCalendar -->
-  <link rel="stylesheet" href="{{ asset('bower_components/fullcalendar/dist/fullcalendar.min.css') }}">
-  <link rel="stylesheet" href="{{ asset('bower_components/fullcalendar/dist/fullcalendar.print.min.css') }}" media="print">
-@endsection
-
 @section('contentheader_breadcrumb')
   <li class="active">Calendar</li>
 @endsection

@@ -1,7 +1,6 @@
 @extends('vendor.adminlte2.sample.app')
 
 @section('htmlheader_additional')
-  <!-- demo style -->
   <style>
     /* FROM HTTP://WWW.GETBOOTSTRAP.COM
      * Glyphicons

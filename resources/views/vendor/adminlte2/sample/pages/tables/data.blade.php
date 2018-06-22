@@ -1,10 +1,5 @@
 @extends('vendor.adminlte2.sample.app')
 
-@section('htmlheader_additional')
-  <!-- DataTables -->
-  <link rel="stylesheet" href="{{ asset('bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
-@endsection
-
 @section('contentheader_breadcrumb')
   <li><a href="#"> Tables</a></li>
   <li class="active">Data tables</li>

@@ -1,9 +1,5 @@
 @extends('vendor.adminlte2.sample.app')
 
-@section('htmlheader_additional')
-
-@endsection
-
 @section('contentheader_breadcrumb')
   <li><a href="#"> Examples</a></li>
   <li class="active">404 Error</li>

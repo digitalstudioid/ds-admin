@@ -1,10 +1,5 @@
 @extends('vendor.adminlte2.sample.app')
 
-@section('htmlheader_additional')
-  <!-- iCheck -->
-  <link rel="stylesheet" href="{{ asset('plugins/iCheck/flat/blue.css') }}">
-@endsection
-
 @section('contentheader_breadcrumb')
   <li><a href="#"> Mailbox</a></li>
   <li class="active">Mailbox</li>
