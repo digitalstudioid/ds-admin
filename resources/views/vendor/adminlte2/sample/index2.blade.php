@@ -1,7 +1,7 @@
-@extends('vendor.adminlte2.sample.app')
+@extends('adminlte2::sample.app')
 
 @section('main-content')
-	@include('vendor.adminlte2.sample.partials.content_sample_index2')
+	@include('adminlte2::sample.partials.content_sample_index2')
 @endsection
 
 @section('additional_scripts')

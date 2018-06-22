@@ -1,4 +1,4 @@
-@extends('vendor.adminlte2.sample.app')
+@extends('adminlte2::sample.app')
 
 @section('contentheader_breadcrumb')
   <li><a href="#"> Forms</a></li>

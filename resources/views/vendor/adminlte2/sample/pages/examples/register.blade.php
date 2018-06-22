@@ -1,4 +1,4 @@
-@extends('vendor.adminlte2.sample.auth')
+@extends('adminlte2::sample.auth')
 
 @section('bodyclass', 'register-page')
 

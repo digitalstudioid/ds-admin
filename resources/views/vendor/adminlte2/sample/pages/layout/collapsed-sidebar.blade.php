@@ -1,4 +1,4 @@
-@extends('vendor.adminlte2.sample.app')
+@extends('adminlte2::sample.app')
 
 @section('bodyclass', 'sidebar-collapse')
 

@@ -2,19 +2,19 @@
 <html lang="en">
 
 @section('htmlheader')
-  @include('vendor.adminlte2.sample.partials.htmlheader')
+  @include('adminlte2::sample.partials.htmlheader')
 @show
 
 <body class="hold-transition skin-blue @yield('bodyclass') sidebar-mini">
   
   <div class="wrapper">
 
-    @include('vendor.adminlte2.sample.partials.mainheader')
-    @include('vendor.adminlte2.sample.partials.sidebar')
+    @include('adminlte2::sample.partials.mainheader')
+    @include('adminlte2::sample.partials.sidebar')
 
     <div class="content-wrapper">    
       
-      @include('vendor.adminlte2.sample.partials.contentheader')
+      @include('adminlte2::sample.partials.contentheader')
 
       <section class="content">      
         @yield('main-content')
@@ -22,13 +22,13 @@
 
     </div>
     
-    @include('vendor.adminlte2.sample.partials.footer')
-    @include('vendor.adminlte2.sample.partials.controlsidebar')
+    @include('adminlte2::sample.partials.footer')
+    @include('adminlte2::sample.partials.controlsidebar')
 
   </div>
 
   @section('scripts')
-      @include('vendor.adminlte2.sample.partials.scripts')
+      @include('adminlte2::sample.partials.scripts')
       @yield('additional_scripts')
   @show 
 
