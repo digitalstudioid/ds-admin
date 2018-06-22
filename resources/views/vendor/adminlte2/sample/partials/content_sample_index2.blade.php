@@ -1,4 +1,3 @@
-<!-- Info boxes -->
 <div class="row">
   <div class="col-md-3 col-sm-6 col-xs-12">
     <div class="info-box">
@@ -57,7 +56,6 @@
   </div>
   <!-- /.col -->
 </div>
-<!-- /.row -->
 
 <div class="row">
   <div class="col-md-12">
@@ -190,9 +188,7 @@
   </div>
   <!-- /.col -->
 </div>
-<!-- /.row -->
 
-<!-- Main row -->
 <div class="row">
   <!-- Left col -->
   <div class="col-md-8">
@@ -547,7 +543,7 @@
             </thead>
             <tbody>
             <tr>
-              <td><a href="pages/examples/invoice.html">OR9842</a></td>
+              <td><a href="{{ url('adminlte/examples/invoice') }}">OR9842</a></td>
               <td>Call of Duty IV</td>
               <td><span class="label label-success">Shipped</span></td>
               <td>
@@ -555,7 +551,7 @@
               </td>
             </tr>
             <tr>
-              <td><a href="pages/examples/invoice.html">OR1848</a></td>
+              <td><a href="{{ url('adminlte/examples/invoice') }}">OR1848</a></td>
               <td>Samsung Smart TV</td>
               <td><span class="label label-warning">Pending</span></td>
               <td>
@@ -563,7 +559,7 @@
               </td>
             </tr>
             <tr>
-              <td><a href="pages/examples/invoice.html">OR7429</a></td>
+              <td><a href="{{ url('adminlte/examples/invoice') }}">OR7429</a></td>
               <td>iPhone 6 Plus</td>
               <td><span class="label label-danger">Delivered</span></td>
               <td>
@@ -571,7 +567,7 @@
               </td>
             </tr>
             <tr>
-              <td><a href="pages/examples/invoice.html">OR7429</a></td>
+              <td><a href="{{ url('adminlte/examples/invoice') }}">OR7429</a></td>
               <td>Samsung Smart TV</td>
               <td><span class="label label-info">Processing</span></td>
               <td>
@@ -579,7 +575,7 @@
               </td>
             </tr>
             <tr>
-              <td><a href="pages/examples/invoice.html">OR1848</a></td>
+              <td><a href="{{ url('adminlte/examples/invoice') }}">OR1848</a></td>
               <td>Samsung Smart TV</td>
               <td><span class="label label-warning">Pending</span></td>
               <td>
@@ -587,7 +583,7 @@
               </td>
             </tr>
             <tr>
-              <td><a href="pages/examples/invoice.html">OR7429</a></td>
+              <td><a href="{{ url('adminlte/examples/invoice') }}">OR7429</a></td>
               <td>iPhone 6 Plus</td>
               <td><span class="label label-danger">Delivered</span></td>
               <td>
@@ -595,7 +591,7 @@
               </td>
             </tr>
             <tr>
-              <td><a href="pages/examples/invoice.html">OR9842</a></td>
+              <td><a href="{{ url('adminlte/examples/invoice') }}">OR9842</a></td>
               <td>Call of Duty IV</td>
               <td><span class="label label-success">Shipped</span></td>
               <td>
@@ -816,4 +812,3 @@
   </div>
   <!-- /.col -->
 </div>
-<!-- /.row -->
