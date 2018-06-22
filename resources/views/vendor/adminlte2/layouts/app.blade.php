@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 @section('htmlheader')
   @include('adminlte2::layouts.partials.htmlheader')
