@@ -11,9 +11,8 @@
 
 	@section('scripts_auth')
 		@include('vendor.adminlte2.sample.partials.scripts_auth')
+		@yield('additional_scripts_auth')
 	@show
-
-	@yield('additional_scripts_auth')
 
 </body>
 </html>
