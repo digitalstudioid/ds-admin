@@ -53,14 +53,18 @@
             <a href="{{ url('adminlte/index2') }}"><i class="fa fa-home"></i> Home v2</a>
           </li>
         </ul>
-      </li> -->
+      </li> -->       
 
       <li class="{{ Request::is('adminlte') ? 'active' : null }}">
-        <a href="{{ url('adminlte') }}"><i class="fa fa-home"></i> Home v1</a>
-      </li>
+        <a href="{{ url('adminlte') }}">
+          <i class="fa fa-home"></i> <span>Home v1</span>          
+        </a>
+      </li>      
 
       <li class="{{ Request::is('adminlte/index2') ? 'active' : null }}">
-        <a href="{{ url('adminlte/index2') }}"><i class="fa fa-home"></i> Home v2</a>
+        <a href="{{ url('adminlte/index2') }}">
+          <i class="fa fa-home"></i> <span>Home v2</span>          
+        </a>
       </li>
       
       <li class="treeview {{ Request::is('adminlte/layout*') ? 'active' : null }}">
