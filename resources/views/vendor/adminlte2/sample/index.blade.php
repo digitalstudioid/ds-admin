@@ -8,7 +8,7 @@
 	@include('vendor.adminlte2.sample.partials.content_sample_index')
 @endsection
 
-@section('additionalscript')
+@section('additional_scripts')
 	<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 	<script src="{{ asset('dist/js/pages/dashboard.js') }}"></script>
 	<!-- AdminLTE for demo purposes -->

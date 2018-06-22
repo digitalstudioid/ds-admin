@@ -410,7 +410,7 @@
   <!-- /.row -->
 @endsection
 
-@section('additionalscript')  
+@section('additional_scripts')  
   <!-- Select2 -->
   <script src="{{ asset('bower_components/select2/dist/js/select2.full.min.js') }}"></script>
   <!-- InputMask -->

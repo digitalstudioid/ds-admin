@@ -27,7 +27,7 @@
     @include('vendor.adminlte2.sample.partials.scripts')
 @show
 
-@yield('additionalscript')
+@yield('additional_scripts')
 
 </body>
 </html>

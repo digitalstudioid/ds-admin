@@ -270,7 +270,7 @@
   </div>
 @endsection
 
-@section('additionalscript')
+@section('additional_scripts')
   <!-- iCheck -->
   <script src="{{ asset('plugins/iCheck/icheck.min.js') }}"></script>
   <!-- Page Script -->

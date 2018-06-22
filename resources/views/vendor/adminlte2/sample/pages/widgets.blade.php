@@ -1060,7 +1060,7 @@
   <!-- /.row -->
 @endsection
 
-@section('additionalscript')
+@section('additional_scripts')
   <!-- AdminLTE for demo purposes -->
   <script src="{{ asset('dist/js/demo.js') }}"></script>
 @endsection

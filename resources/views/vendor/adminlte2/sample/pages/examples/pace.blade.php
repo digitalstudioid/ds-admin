@@ -45,7 +45,7 @@
   </div>
 @endsection
 
-@section('additionalscript')
+@section('additional_scripts')
   <!-- PACE -->
   <script src="{{ asset('bower_components/PACE/pace.min.js') }}"></script>
   <!-- AdminLTE for demo purposes -->
