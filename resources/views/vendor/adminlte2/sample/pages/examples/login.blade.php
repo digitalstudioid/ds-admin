@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="{{ asset('plugins/iCheck/square/blue.css') }}">
 @endsection
 
-@section('bodyclass', 'hold-transition login-page')
+@section('bodyclass', 'login-page')
 
 @section('main-content')
   <div class="login-box">

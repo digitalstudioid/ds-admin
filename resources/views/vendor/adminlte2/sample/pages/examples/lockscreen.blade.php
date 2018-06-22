@@ -1,6 +1,6 @@
 @extends('vendor.adminlte2.sample.auth')
 
-@section('bodyclass', 'hold-transition lockscreen')
+@section('bodyclass', 'lockscreen')
 
 @section('main-content')
   <div class="lockscreen-wrapper">

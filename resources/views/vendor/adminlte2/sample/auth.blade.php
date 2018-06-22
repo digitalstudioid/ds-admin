@@ -5,7 +5,7 @@
     @include('vendor.adminlte2.sample.partials.htmlheader')
 @show
 
-<body class="@yield('bodyclass')">
+<body class="hold-transition @yield('bodyclass')">
 
 	@yield('main-content')
 
