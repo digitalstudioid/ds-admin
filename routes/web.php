@@ -18,7 +18,12 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
-
+Route::get('/home/index2', function () {
+	$pageTitle			= 'Home 2';
+	$pageDescription	= 'Control Panel';
+	
+	return view('adminlte2::index2', compact('pageTitle', 'pageDescription'));
+});
 
 
 
