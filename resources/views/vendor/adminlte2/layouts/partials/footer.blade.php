@@ -1,10 +1,9 @@
 <footer class="main-footer">
 	
 	<div class="pull-right hidden-xs">
-		<b>Version</b> 2.4.0
+		Powered by <a href="http://digitalstudio.id" target="_blank"><b>DigitalStudio.ID</b></a>
 	</div>
 
-	<strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
-	reserved.
+	<strong>Copyright &copy; 2018 <a href="{{ url('/') }}">DSID Framework v.01</a>.</strong> All rights reserved.
 	
 </footer>

@@ -23,6 +23,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $pageTitle          = 'Home';
+        $pageDescription    = 'Control Panel';
+
+        return view('adminlte2::index', compact('pageTitle', 'pageDescription'));
     }
 }
