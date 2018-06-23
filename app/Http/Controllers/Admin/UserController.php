@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\MeetingRoom;
+use App\User;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class MeetingRoomController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +15,10 @@ class MeetingRoomController extends Controller
      */
     public function index()
     {
-        $pageTitle          = 'Meeting Room';
-        $pageDescription    = 'Master';
+        $pageTitle          = 'Users';
+        $pageDescription    = 'Credential Manager';
         
-        return view('pages.mrr.meetingroom.index', compact('pageTitle', 'pageDescription'));
+        return view('admin.users.index', compact('pageTitle', 'pageDescription'));
     }
 
     /**
@@ -44,10 +45,10 @@ class MeetingRoomController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\MeetingRoom  $meetingRoom
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(MeetingRoom $meetingRoom)
+    public function show($id)
     {
         //
     }
@@ -55,10 +56,10 @@ class MeetingRoomController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\MeetingRoom  $meetingRoom
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(MeetingRoom $meetingRoom)
+    public function edit($id)
     {
         //
     }
@@ -67,10 +68,10 @@ class MeetingRoomController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\MeetingRoom  $meetingRoom
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, MeetingRoom $meetingRoom)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -78,10 +79,10 @@ class MeetingRoomController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\MeetingRoom  $meetingRoom
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(MeetingRoom $meetingRoom)
+    public function destroy($id)
     {
         //
     }

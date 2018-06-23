@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Style;
+use App\Privilege;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class StyleController extends Controller
+class PrivilegeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +15,10 @@ class StyleController extends Controller
      */
     public function index()
     {
-        $pageTitle          = 'Style';
-        $pageDescription    = 'Setting';
+        $pageTitle          = 'Privileges & Roles';
+        $pageDescription    = '...';
         
-        return view('admin.style.index', compact('pageTitle', 'pageDescription'));
+        return view('admin.privileges.index', compact('pageTitle', 'pageDescription'));
     }
 
     /**
@@ -44,10 +45,10 @@ class StyleController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Style  $style
+     * @param  \App\Privilege  $privilege
      * @return \Illuminate\Http\Response
      */
-    public function show(Style $style)
+    public function show(Privilege $privilege)
     {
         //
     }
@@ -55,10 +56,10 @@ class StyleController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Style  $style
+     * @param  \App\Privilege  $privilege
      * @return \Illuminate\Http\Response
      */
-    public function edit(Style $style)
+    public function edit(Privilege $privilege)
     {
         //
     }
@@ -67,10 +68,10 @@ class StyleController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Style  $style
+     * @param  \App\Privilege  $privilege
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Style $style)
+    public function update(Request $request, Privilege $privilege)
     {
         //
     }
@@ -78,10 +79,10 @@ class StyleController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Style  $style
+     * @param  \App\Privilege  $privilege
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Style $style)
+    public function destroy(Privilege $privilege)
     {
         //
     }

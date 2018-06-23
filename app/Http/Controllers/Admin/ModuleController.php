@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Privilege;
+use App\Module;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class PrivilegeController extends Controller
+class ModuleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +15,10 @@ class PrivilegeController extends Controller
      */
     public function index()
     {
-        $pageTitle          = 'Privileges & Roles';
+        $pageTitle          = 'Modules';
         $pageDescription    = '...';
         
-        return view('admin.privileges.index', compact('pageTitle', 'pageDescription'));
+        return view('admin.modules.index', compact('pageTitle', 'pageDescription'));
     }
 
     /**
@@ -44,10 +45,10 @@ class PrivilegeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Privilege  $privilege
+     * @param  \App\Module  $module
      * @return \Illuminate\Http\Response
      */
-    public function show(Privilege $privilege)
+    public function show(Module $module)
     {
         //
     }
@@ -55,10 +56,10 @@ class PrivilegeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Privilege  $privilege
+     * @param  \App\Module  $module
      * @return \Illuminate\Http\Response
      */
-    public function edit(Privilege $privilege)
+    public function edit(Module $module)
     {
         //
     }
@@ -67,10 +68,10 @@ class PrivilegeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Privilege  $privilege
+     * @param  \App\Module  $module
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Privilege $privilege)
+    public function update(Request $request, Module $module)
     {
         //
     }
@@ -78,10 +79,10 @@ class PrivilegeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Privilege  $privilege
+     * @param  \App\Module  $module
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Privilege $privilege)
+    public function destroy(Module $module)
     {
         //
     }

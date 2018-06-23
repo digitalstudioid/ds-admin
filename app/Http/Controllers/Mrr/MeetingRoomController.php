@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Mrr;
 
-use App\User;
+use App\MeetingRoom;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class MeetingRoomController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +15,10 @@ class UserController extends Controller
      */
     public function index()
     {
-        $pageTitle          = 'Users';
+        $pageTitle          = 'Meeting Room';
         $pageDescription    = '...';
         
-        return view('admin.users.index', compact('pageTitle', 'pageDescription'));
+        return view('pages.mrr.meetingroom.index', compact('pageTitle', 'pageDescription'));
     }
 
     /**
@@ -44,10 +45,10 @@ class UserController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\MeetingRoom  $meetingRoom
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(MeetingRoom $meetingRoom)
     {
         //
     }
@@ -55,10 +56,10 @@ class UserController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\MeetingRoom  $meetingRoom
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(MeetingRoom $meetingRoom)
     {
         //
     }
@@ -67,10 +68,10 @@ class UserController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\MeetingRoom  $meetingRoom
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, MeetingRoom $meetingRoom)
     {
         //
     }
@@ -78,10 +79,10 @@ class UserController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\MeetingRoom  $meetingRoom
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(MeetingRoom $meetingRoom)
     {
         //
     }

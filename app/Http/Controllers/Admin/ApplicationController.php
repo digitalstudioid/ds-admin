@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Module;
+use App\Application;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ModuleController extends Controller
+class ApplicationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +15,10 @@ class ModuleController extends Controller
      */
     public function index()
     {
-        $pageTitle          = 'Modules';
-        $pageDescription    = '...';
+        $pageTitle          = 'Application';
+        $pageDescription    = 'Setting';
         
-        return view('admin.modules.index', compact('pageTitle', 'pageDescription'));
+        return view('admin.application.index', compact('pageTitle', 'pageDescription'));
     }
 
     /**
@@ -44,10 +45,10 @@ class ModuleController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Module  $module
+     * @param  \App\Application  $application
      * @return \Illuminate\Http\Response
      */
-    public function show(Module $module)
+    public function show(Application $application)
     {
         //
     }
@@ -55,10 +56,10 @@ class ModuleController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Module  $module
+     * @param  \App\Application  $application
      * @return \Illuminate\Http\Response
      */
-    public function edit(Module $module)
+    public function edit(Application $application)
     {
         //
     }
@@ -67,10 +68,10 @@ class ModuleController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Module  $module
+     * @param  \App\Application  $application
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Module $module)
+    public function update(Request $request, Application $application)
     {
         //
     }
@@ -78,10 +79,10 @@ class ModuleController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Module  $module
+     * @param  \App\Application  $application
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Module $module)
+    public function destroy(Application $application)
     {
         //
     }

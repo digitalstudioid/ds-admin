@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Mrr;
 
-use App\Building;
+use App\Reservation;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class BuildingController extends Controller
+class ReservationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +15,10 @@ class BuildingController extends Controller
      */
     public function index()
     {
-        $pageTitle          = 'Building';
+        $pageTitle          = 'Reservation';
         $pageDescription    = '...';
         
-        return view('pages.mrr.building.index', compact('pageTitle', 'pageDescription'));
+        return view('pages.mrr.reservation.index', compact('pageTitle', 'pageDescription'));
     }
 
     /**
@@ -44,10 +45,10 @@ class BuildingController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Building  $building
+     * @param  \App\Reservation  $reservation
      * @return \Illuminate\Http\Response
      */
-    public function show(Building $building)
+    public function show(Reservation $reservation)
     {
         //
     }
@@ -55,10 +56,10 @@ class BuildingController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Building  $building
+     * @param  \App\Reservation  $reservation
      * @return \Illuminate\Http\Response
      */
-    public function edit(Building $building)
+    public function edit(Reservation $reservation)
     {
         //
     }
@@ -67,10 +68,10 @@ class BuildingController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Building  $building
+     * @param  \App\Reservation  $reservation
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Building $building)
+    public function update(Request $request, Reservation $reservation)
     {
         //
     }
@@ -78,10 +79,10 @@ class BuildingController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Building  $building
+     * @param  \App\Reservation  $reservation
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Building $building)
+    public function destroy(Reservation $reservation)
     {
         //
     }

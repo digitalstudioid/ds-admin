@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Application;
+use App\Style;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ApplicationController extends Controller
+class StyleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +15,10 @@ class ApplicationController extends Controller
      */
     public function index()
     {
-        $pageTitle          = 'Application';
+        $pageTitle          = 'Style';
         $pageDescription    = 'Setting';
         
-        return view('admin.application.index', compact('pageTitle', 'pageDescription'));
+        return view('admin.style.index', compact('pageTitle', 'pageDescription'));
     }
 
     /**
@@ -44,10 +45,10 @@ class ApplicationController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Application  $application
+     * @param  \App\Style  $style
      * @return \Illuminate\Http\Response
      */
-    public function show(Application $application)
+    public function show(Style $style)
     {
         //
     }
@@ -55,10 +56,10 @@ class ApplicationController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Application  $application
+     * @param  \App\Style  $style
      * @return \Illuminate\Http\Response
      */
-    public function edit(Application $application)
+    public function edit(Style $style)
     {
         //
     }
@@ -67,10 +68,10 @@ class ApplicationController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Application  $application
+     * @param  \App\Style  $style
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Application $application)
+    public function update(Request $request, Style $style)
     {
         //
     }
@@ -78,10 +79,10 @@ class ApplicationController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Application  $application
+     * @param  \App\Style  $style
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Application $application)
+    public function destroy(Style $style)
     {
         //
     }

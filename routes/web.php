@@ -19,21 +19,21 @@ Auth::routes();
 Route::get(config('app.adminPath'), 'HomeController@index')->name('home');
 
 Route::group(['prefix' => config('app.adminPath') . '/meeting-room-reservation'], function() {
-    Route::resource('building', 'BuildingController');
-    Route::resource('meeting-room', 'MeetingRoomController');
-    Route::resource('reservation', 'ReservationController');
+    Route::resource('building', 'Mrr\BuildingController');
+    Route::resource('meeting-room', 'Mrr\MeetingRoomController');
+    Route::resource('reservation', 'Mrr\ReservationController');
 });
 
 Route::group(['prefix' => config('app.adminPath') . '/user-management'], function() {
-    Route::resource('modules', 'ModuleController');
-    Route::resource('privileges', 'PrivilegeController');
-    Route::resource('users', 'UserController');
+    Route::resource('modules', 'Admin\ModuleController');
+    Route::resource('privileges', 'Admin\PrivilegeController');
+    Route::resource('users', 'Admin\UserController');
 });
 
 Route::group(['prefix' => config('app.adminPath') . '/settings'], function() {
-    Route::resource('application', 'ApplicationController');
-    Route::resource('email', 'EmailController');
-    Route::resource('style', 'StyleController');
+    Route::resource('application', 'Admin\ApplicationController');
+    Route::resource('email', 'Admin\EmailController');
+    Route::resource('style', 'Admin\StyleController');
 });
 
 Route::get(config('app.adminPath') . '/documentation', function() {
