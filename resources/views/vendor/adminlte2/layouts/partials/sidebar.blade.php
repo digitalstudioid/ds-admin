@@ -36,13 +36,13 @@
 
       <li class="header">MAIN NAVIGATION</li>
 
-      <li class="{{ Request::is('home') ? 'active' : null }}">
-        <a href="{{ url('home') }}">
+      <li class="{{ Request::is(config('app.adminPath')) ? 'active' : null }}">
+        <a href="{{ url(config('app.adminPath')) }}">
           <i class="fa fa-home"></i> <span>Home</span>          
         </a>
       </li>
 
-      <li class="treeview {{ Request::is('meeting-room*') ? 'active' : null }}">
+      <li class="treeview {{ Request::is(config('app.adminPath') . '/meeting-room-reservation*') ? 'active' : null }}">
         <a href="#">
           <i class="fa fa-building"></i>
           <span>Meeting Room Reservation</span>
@@ -51,23 +51,23 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li class="{{ Request::is('meeting-room/building') ? 'active' : null }}">
-            <a href="{{ url('meeting-room/building') }}"><i class="fa fa-building"></i> Building</a>
+          <li class="{{ Request::is(config('app.adminPath') . '/meeting-room-reservation/building') ? 'active' : null }}">
+            <a href="{{ url(config('app.adminPath') . '/meeting-room-reservation/building') }}"><i class="fa fa-building"></i> Building</a>
           </li>
           
-          <li class="{{ Request::is('meeting-room/room') ? 'active' : null }}">
-            <a href="{{ url('meeting-room/room') }}"><i class="fa fa-building"></i> Room</a>
+          <li class="{{ Request::is(config('app.adminPath') . '/meeting-room-reservation/meeting-room') ? 'active' : null }}">
+            <a href="{{ url(config('app.adminPath') . '/meeting-room-reservation/meeting-room') }}"><i class="fa fa-building"></i> Meeting Room</a>
           </li>
           
-          <li class="{{ Request::is('meeting-room/reservation') ? 'active' : null }}">
-            <a href="{{ url('meeting-room/reservation') }}"><i class="fa fa-bars"></i> Reservation</a>
+          <li class="{{ Request::is(config('app.adminPath') . '/meeting-room-reservation/reservation') ? 'active' : null }}">
+            <a href="{{ url(config('app.adminPath') . '/meeting-room-reservation/reservation') }}"><i class="fa fa-bars"></i> Reservation</a>
           </li>
         </ul>
       </li>
 
       <li class="header">SUPER ADMIN</li>
 
-      <li class="treeview {{ Request::is('user-management*') ? 'active' : null }}">
+      <li class="treeview {{ Request::is(config('app.adminPath') . '/user-management*') ? 'active' : null }}">
         <a href="#">
           <i class="fa fa-users"></i>
           <span>User Management</span>
@@ -76,21 +76,21 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li class="{{ Request::is('user-management/modules') ? 'active' : null }}">
-            <a href="{{ url('user-management/modules') }}"><i class="fa fa-bars"></i> Modules</a>
+          <li class="{{ Request::is(config('app.adminPath') . '/user-management/modules') ? 'active' : null }}">
+            <a href="{{ url(config('app.adminPath') . '/user-management/modules') }}"><i class="fa fa-bars"></i> Modules</a>
           </li>
           
-          <li class="{{ Request::is('user-management/privileges') ? 'active' : null }}">
-            <a href="{{ url('user-management/privileges') }}"><i class="fa fa-bars"></i> Privileges & Roles</a>
+          <li class="{{ Request::is(config('app.adminPath') . '/user-management/privileges') ? 'active' : null }}">
+            <a href="{{ url(config('app.adminPath') . '/user-management/privileges') }}"><i class="fa fa-bars"></i> Privileges & Roles</a>
           </li>
           
-          <li class="{{ Request::is('user-management/users') ? 'active' : null }}">
-            <a href="{{ url('user-management/users') }}"><i class="fa fa-users"></i> Users</a>
+          <li class="{{ Request::is(config('app.adminPath') . '/user-management/users') ? 'active' : null }}">
+            <a href="{{ url(config('app.adminPath') . '/user-management/users') }}"><i class="fa fa-users"></i> Users</a>
           </li>
         </ul>
       </li>
 
-      <li class="treeview {{ Request::is('settings*') ? 'active' : null }}">
+      <li class="treeview {{ Request::is(config('app.adminPath') . '/settings*') ? 'active' : null }}">
         <a href="#">
           <i class="fa fa-gears"></i>
           <span>Settings</span>
@@ -99,21 +99,21 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li class="{{ Request::is('settings/application') ? 'active' : null }}">
-            <a href="{{ url('settings/application') }}"><i class="fa fa-gears"></i> Application</a>
+          <li class="{{ Request::is(config('app.adminPath') . '/settings/application') ? 'active' : null }}">
+            <a href="{{ url(config('app.adminPath') . '/settings/application') }}"><i class="fa fa-gears"></i> Application</a>
           </li>
           
-          <li class="{{ Request::is('settings/email') ? 'active' : null }}">
-            <a href="{{ url('settings/email') }}"><i class="fa fa-envelope"></i> Email</a>
+          <li class="{{ Request::is(config('app.adminPath') . '/settings/email') ? 'active' : null }}">
+            <a href="{{ url(config('app.adminPath') . '/settings/email') }}"><i class="fa fa-envelope"></i> Email</a>
           </li>
           
-          <li class="{{ Request::is('settings/style') ? 'active' : null }}">
-            <a href="{{ url('settings/style') }}"><i class="fa fa-eye"></i> Style</a>
+          <li class="{{ Request::is(config('app.adminPath') . '/settings/style') ? 'active' : null }}">
+            <a href="{{ url(config('app.adminPath') . '/settings/style') }}"><i class="fa fa-eye"></i> Style</a>
           </li>
         </ul>
       </li>
 
-      <li class="treeview {{ Request::is('api*') ? 'active' : null }}">
+      <!-- <li class="treeview {{ Request::is(config('app.adminPath') . '/api*') ? 'active' : null }}">
         <a href="#">
           <i class="fa fa-fire"></i>
           <span>API Generator</span>
@@ -122,20 +122,20 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li class="{{ Request::is('api/list') ? 'active' : null }}">
-            <a href="{{ url('api/list') }}"><i class="fa fa-bars"></i> List API (Documentation)</a>
+          <li class="{{ Request::is(config('app.adminPath') . '/api/list') ? 'active' : null }}">
+            <a href="{{ url(config('app.adminPath') . '/api/list') }}"><i class="fa fa-bars"></i> List API (Documentation)</a>
           </li>
           
-          <li class="{{ Request::is('api/generate-secret-key') ? 'active' : null }}">
-            <a href="{{ url('api/generate-secret-key') }}"><i class="fa fa-bars"></i> Generate Secret Key</a>
+          <li class="{{ Request::is(config('app.adminPath') . '/api/generate-secret-key') ? 'active' : null }}">
+            <a href="{{ url(config('app.adminPath') . '/api/generate-secret-key') }}"><i class="fa fa-bars"></i> Generate Secret Key</a>
           </li>
         </ul>
-      </li>
+      </li> -->
 
       <li class="header">USER</li>
 
-      <li class="{{ Request::is('documentation') ? 'active' : null }}">
-        <a href="{{ url('documentation') }}">
+      <li class="{{ Request::is(config('app.adminPath') . '/documentation') ? 'active' : null }}">
+        <a href="{{ url(config('app.adminPath') . '/documentation') }}">
           <i class="fa fa-book"></i> <span>Documentation</span>          
         </a>
       </li>

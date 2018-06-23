@@ -1,8 +1,8 @@
 @extends('adminlte2::layouts.app')
 
 @section('contentheader_breadcrumb')
-  <li><a href="#"> User Management</a></li>
-  <li class="active">Modules</li>
+  <li><a href="#"> Settings</a></li>
+  <li class="active">Email</li>
 @endsection
 
 @section('main-content')

@@ -2,7 +2,7 @@
 
 @section('contentheader_breadcrumb')
   <li><a href="#"> User Management</a></li>
-  <li class="active">Modules</li>
+  <li class="active">Privileges & Roles</li>
 @endsection
 
 @section('main-content')
