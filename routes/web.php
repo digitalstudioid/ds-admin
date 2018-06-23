@@ -24,18 +24,6 @@ Route::group(['prefix' => config('app.adminPath') . '/meeting-room-reservation']
     Route::resource('reservation', 'Mrr\ReservationController');
 });
 
-Route::group(['prefix' => config('app.adminPath') . '/user-management'], function() {
-    Route::resource('modules', 'Admin\ModuleController');
-    Route::resource('privileges', 'Admin\PrivilegeController');
-    Route::resource('users', 'Admin\UserController');
-});
-
-Route::group(['prefix' => config('app.adminPath') . '/settings'], function() {
-    Route::resource('application', 'Admin\ApplicationController');
-    Route::resource('email', 'Admin\EmailController');
-    Route::resource('style', 'Admin\StyleController');
-});
-
 Route::get(config('app.adminPath') . '/documentation', function() {
     $pageTitle          = 'Documentation';
     $pageDescription    = 'Detail';
