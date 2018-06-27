@@ -6,7 +6,7 @@
 	</h1>
 
 	<ol class="breadcrumb">
-		<li><a href="{{ route('home') }}"><i class="fa fa-home"></i> Home</a></li>
+		<li><a href="{{ url(config('app.adminPath')) }}"><i class="fa fa-home"></i> Home</a></li>
 		@yield('contentheader_breadcrumb')
 	</ol>
 

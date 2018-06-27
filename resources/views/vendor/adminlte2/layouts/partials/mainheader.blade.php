@@ -251,7 +251,14 @@
                 <a href="#" class="btn btn-default btn-flat">Profile</a>
               </div>
               <div class="pull-right">
-                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                <!-- <a href="#" class="btn btn-default btn-flat">Sign out</a> -->
+
+                <a href="{{ route('logout') }}" class="btn btn-default btn-flat" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Sign out</a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                    <input type="submit" value="logout" style="display: none;">
+                </form>                
               </div>
             </li>
           </ul>
