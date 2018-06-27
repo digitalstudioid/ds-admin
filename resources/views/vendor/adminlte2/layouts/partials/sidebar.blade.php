@@ -153,7 +153,7 @@
       </li>
 
       <li class="{{ Request::is('logout') ? 'active' : null }}">
-        <a href="{{ url('logout') }}">
+        <a href="{{ url('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
           <i class="fa fa-power-off"></i> <span>Logout</span>          
         </a>
       </li>     
