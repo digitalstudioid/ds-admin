@@ -14,8 +14,11 @@ class CreateMrrBuildingTable extends Migration
     public function up()
     {
         Schema::create('mrr_building', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->nullable();
+            $table->softDeletes();
         });
     }
 

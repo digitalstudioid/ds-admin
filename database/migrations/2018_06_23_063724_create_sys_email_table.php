@@ -14,7 +14,7 @@ class CreateSysEmailTable extends Migration
     public function up()
     {
         Schema::create('sys_email', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->timestamps();
         });
     }

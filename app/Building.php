@@ -8,13 +8,18 @@ class Building extends Model
 {
     protected $table = 'mrr_building';
 
-    /*
     protected $fillable = [
-        'fieldname',
+        'name',
     ];
 
+    /*
     protected $hidden = [
         'fieldname',
     ];
     */
+
+    public function mrr_meeting_room()
+    {
+      return $this->hasMany('App\MeetingRoom');
+    }
 }

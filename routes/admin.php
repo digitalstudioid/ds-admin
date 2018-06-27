@@ -12,7 +12,7 @@ Route::group(['prefix' => config('app.adminPath') . '/user-management'], functio
     Route::resource('users', 'UserController');
 });
 
-Route::group(['prefix' => config('app.adminPath') . '/settings'], function() {
+Route::group(['prefix' => config('app.adminPath') . '/setting'], function() {
     Route::resource('application', 'ApplicationController');
     Route::resource('email', 'EmailController');
     Route::resource('style', 'StyleController');

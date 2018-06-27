@@ -90,25 +90,25 @@
         </ul>
       </li>
 
-      <li class="treeview {{ Request::is(config('app.adminPath') . '/settings*') ? 'active' : null }}">
+      <li class="treeview {{ Request::is(config('app.adminPath') . '/setting*') ? 'active' : null }}">
         <a href="#">
           <i class="fa fa-gears"></i>
-          <span>Settings</span>
+          <span>Setting</span>
           <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
           </span>
         </a>
         <ul class="treeview-menu">
-          <li class="{{ Request::is(config('app.adminPath') . '/settings/application') ? 'active' : null }}">
-            <a href="{{ url(config('app.adminPath') . '/settings/application') }}"><i class="fa fa-gears"></i> Application</a>
+          <li class="{{ Request::is(config('app.adminPath') . '/setting/application') ? 'active' : null }}">
+            <a href="{{ url(config('app.adminPath') . '/setting/application') }}"><i class="fa fa-gears"></i> Application</a>
           </li>
           
-          <li class="{{ Request::is(config('app.adminPath') . '/settings/email') ? 'active' : null }}">
-            <a href="{{ url(config('app.adminPath') . '/settings/email') }}"><i class="fa fa-envelope"></i> Email</a>
+          <li class="{{ Request::is(config('app.adminPath') . '/setting/email') ? 'active' : null }}">
+            <a href="{{ url(config('app.adminPath') . '/setting/email') }}"><i class="fa fa-envelope"></i> Email</a>
           </li>
           
-          <li class="{{ Request::is(config('app.adminPath') . '/settings/style') ? 'active' : null }}">
-            <a href="{{ url(config('app.adminPath') . '/settings/style') }}"><i class="fa fa-eye"></i> Style</a>
+          <li class="{{ Request::is(config('app.adminPath') . '/setting/style') ? 'active' : null }}">
+            <a href="{{ url(config('app.adminPath') . '/setting/style') }}"><i class="fa fa-eye"></i> Style</a>
           </li>
         </ul>
       </li>

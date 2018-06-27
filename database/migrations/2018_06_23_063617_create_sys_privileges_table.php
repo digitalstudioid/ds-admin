@@ -14,7 +14,7 @@ class CreateSysPrivilegesTable extends Migration
     public function up()
     {
         Schema::create('sys_privileges', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->timestamps();
         });
     }

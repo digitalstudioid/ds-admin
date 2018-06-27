@@ -14,7 +14,7 @@ class CreateMrrReservationTable extends Migration
     public function up()
     {
         Schema::create('mrr_reservation', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->timestamps();
         });
     }

@@ -14,7 +14,7 @@ class CreateSysApplicationTable extends Migration
     public function up()
     {
         Schema::create('sys_application', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->timestamps();
         });
     }
