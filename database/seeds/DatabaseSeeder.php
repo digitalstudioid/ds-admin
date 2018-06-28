@@ -13,11 +13,13 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UsersTableSeeder::class);
 
-        $this->call(users::class);
+        $this->call([
+            users::class,
+            
+            mrr_building::class,
+            mrr_meeting_room::class,
 
-        $this->call(mrr_building::class);
-        $this->call(mrr_meeting_room::class);
-
-        $this->call(sys_modules::class);
+            sys_modules::class,
+        ]);
     }
 }

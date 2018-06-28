@@ -18,6 +18,39 @@ class sys_modules extends Seeder
 	    $module->path = 'user-management';
 	    $module->save();
 
+	    $module_parent = Module::where('name', 'User Management')->first();
+
+	    $module = new Module();
+	    $module->parent_id = $module_parent->id;
+	    $module->name = 'Modules';
+	    $module->icon = 'fa fa-bars';
+	    $module->path = 'modules';
+	    $module->save();
+
+	    $module = new Module();
+	    $module->parent_id = $module_parent->id;
+	    $module->name = 'Privileges & Roles';
+	    $module->icon = 'fa fa-bars';
+	    $module->path = 'privileges';
+	    $module->save();
+
+	    $module = new Module();
+	    $module->parent_id = $module_parent->id;
+	    $module->name = 'Users';
+	    $module->icon = 'fa fa-users';
+	    $module->path = 'users';
+	    $module->save();
+
+
+
+
+
+
+
+
+
+
+
 	    $module = new Module();
 	    $module->name = 'Setting';
 	    $module->icon = 'fa fa-gears';
