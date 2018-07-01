@@ -18,7 +18,7 @@ Route::get('/', function() {
 Auth::routes();
 Route::get(config('app.adminPath'), 'HomeController@index')->name('home');
 
-Route::group(['prefix' => config('app.adminPath') . '/meeting-room-reservation'], function() {
+Route::group(['prefix' => config('app.adminPath') . '/mrr'], function() {
     Route::resource('building', 'Mrr\BuildingController');
     Route::resource('meeting-room', 'Mrr\MeetingRoomController');
     Route::resource('reservation', 'Mrr\ReservationController');

@@ -15,11 +15,15 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             users::class,
+
+            sys_application::class,
+            sys_email::class,
+
+            sys_modules::class,
+            sys_privileges::class,
             
             mrr_building::class,
             mrr_meeting_room::class,
-
-            sys_modules::class,
         ]);
     }
 }

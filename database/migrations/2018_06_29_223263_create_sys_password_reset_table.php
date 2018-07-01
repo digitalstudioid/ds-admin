@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSysEmailTable extends Migration
+class CreateSysPasswordResetTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateSysEmailTable extends Migration
      */
     public function up()
     {
-        Schema::create('sys_email', function (Blueprint $table) {
+        Schema::create('sys_password_reset', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateSysEmailTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sys_email');
+        Schema::dropIfExists('sys_password_reset');
     }
 }

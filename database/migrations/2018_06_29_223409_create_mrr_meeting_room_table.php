@@ -35,7 +35,7 @@ class CreateMrrMeetingRoomTable extends Migration
         DB::unprepared('CREATE TRIGGER mrr_meeting_room_before_upd_tr BEFORE UPDATE ON mrr_meeting_room FOR EACH ROW
         BEGIN
             set new.updated_at = now(), new.created_at = old.created_at;
-        END');        
+        END');
     }
 
     /**

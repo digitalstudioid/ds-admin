@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Style;
+use App\PrivilegeRole;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class StyleController extends Controller
+class PrivilegeRoleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +15,7 @@ class StyleController extends Controller
      */
     public function index()
     {
-        $pageTitle          = 'Style';
-        $pageDescription    = 'Setting';
-        
-        return view('admin.style.index', compact('pageTitle', 'pageDescription'));
+        //
     }
 
     /**
@@ -45,10 +42,10 @@ class StyleController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Style  $style
+     * @param  \App\PrivilegeRole  $privilegeRole
      * @return \Illuminate\Http\Response
      */
-    public function show(Style $style)
+    public function show(PrivilegeRole $privilegeRole)
     {
         //
     }
@@ -56,10 +53,10 @@ class StyleController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Style  $style
+     * @param  \App\PrivilegeRole  $privilegeRole
      * @return \Illuminate\Http\Response
      */
-    public function edit(Style $style)
+    public function edit(PrivilegeRole $privilegeRole)
     {
         //
     }
@@ -68,10 +65,10 @@ class StyleController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Style  $style
+     * @param  \App\PrivilegeRole  $privilegeRole
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Style $style)
+    public function update(Request $request, PrivilegeRole $privilegeRole)
     {
         //
     }
@@ -79,10 +76,10 @@ class StyleController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Style  $style
+     * @param  \App\PrivilegeRole  $privilegeRole
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Style $style)
+    public function destroy(PrivilegeRole $privilegeRole)
     {
         //
     }

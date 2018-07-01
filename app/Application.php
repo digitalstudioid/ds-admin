@@ -8,11 +8,15 @@ class Application extends Model
 {
     protected $table = 'sys_application';
 
-    /*
-    protected $fillable = [
-        'fieldname',
+    protected $casts = [
+        'api_debug_mode' => 'boolean',
     ];
 
+    protected $fillable = [
+        'name, logo, favicon, api_debug_mode',
+    ];
+
+    /*
     protected $hidden = [
         'fieldname',
     ];

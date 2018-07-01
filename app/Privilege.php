@@ -8,11 +8,15 @@ class Privilege extends Model
 {
     protected $table = 'sys_privileges';
 
-    /*
+    protected $casts = [
+        'is_superadmin, is_default, is_active' => 'boolean',
+    ];
+    
     protected $fillable = [
-        'fieldname',
+        'name, theme_color, is_superadmin, is_default, is_active',
     ];
 
+    /*
     protected $hidden = [
         'fieldname',
     ];

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSysApplicationTable extends Migration
+class CreateMrrCompanyTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateSysApplicationTable extends Migration
      */
     public function up()
     {
-        Schema::create('sys_application', function (Blueprint $table) {
+        Schema::create('mrr_company', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateSysApplicationTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sys_application');
+        Schema::dropIfExists('mrr_company');
     }
 }

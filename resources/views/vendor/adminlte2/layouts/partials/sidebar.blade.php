@@ -42,7 +42,7 @@
         </a>
       </li>
 
-      <li class="treeview {{ Request::is(config('app.adminPath') . '/meeting-room-reservation*') ? 'active' : null }}">
+      <li class="treeview {{ Request::is(config('app.adminPath') . '/mrr*') ? 'active' : null }}">
         <a href="#">
           <i class="fa fa-building"></i>
           <span>Meeting Room Reservation</span>
@@ -51,16 +51,20 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li class="{{ Request::is(config('app.adminPath') . '/meeting-room-reservation/building') ? 'active' : null }}">
-            <a href="{{ url(config('app.adminPath') . '/meeting-room-reservation/building') }}"><i class="fa fa-building"></i> Building</a>
+          <li class="{{ Request::is(config('app.adminPath') . '/mrr/company') ? 'active' : null }}">
+            <a href="{{ url(config('app.adminPath') . '/mrr/company') }}"><i class="fa fa-building"></i> Company</a>
+          </li>
+
+          <li class="{{ Request::is(config('app.adminPath') . '/mrr/building') ? 'active' : null }}">
+            <a href="{{ url(config('app.adminPath') . '/mrr/building') }}"><i class="fa fa-building"></i> Building</a>
           </li>
           
-          <li class="{{ Request::is(config('app.adminPath') . '/meeting-room-reservation/meeting-room') ? 'active' : null }}">
-            <a href="{{ url(config('app.adminPath') . '/meeting-room-reservation/meeting-room') }}"><i class="fa fa-building"></i> Meeting Room</a>
+          <li class="{{ Request::is(config('app.adminPath') . '/mrr/meeting-room') ? 'active' : null }}">
+            <a href="{{ url(config('app.adminPath') . '/mrr/meeting-room') }}"><i class="fa fa-building"></i> Meeting Room</a>
           </li>
           
-          <li class="{{ Request::is(config('app.adminPath') . '/meeting-room-reservation/reservation') ? 'active' : null }}">
-            <a href="{{ url(config('app.adminPath') . '/meeting-room-reservation/reservation') }}"><i class="fa fa-bars"></i> Reservation</a>
+          <li class="{{ Request::is(config('app.adminPath') . '/mrr/reservation') ? 'active' : null }}">
+            <a href="{{ url(config('app.adminPath') . '/mrr/reservation') }}"><i class="fa fa-bars"></i> Reservation</a>
           </li>
         </ul>
       </li>
@@ -105,11 +109,7 @@
           
           <li class="{{ Request::is(config('app.adminPath') . '/setting/email') ? 'active' : null }}">
             <a href="{{ url(config('app.adminPath') . '/setting/email') }}"><i class="fa fa-envelope"></i> Email</a>
-          </li>
-          
-          <li class="{{ Request::is(config('app.adminPath') . '/setting/style') ? 'active' : null }}">
-            <a href="{{ url(config('app.adminPath') . '/setting/style') }}"><i class="fa fa-eye"></i> Style</a>
-          </li>
+          </li>        
         </ul>
       </li>
 
