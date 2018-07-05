@@ -21,4 +21,9 @@ class Privilege extends Model
         'fieldname',
     ];
     */
+
+    public function sys_privileges_roles()
+    {
+      return $this->hasMany('App\PrivilegeRole');
+    }
 }

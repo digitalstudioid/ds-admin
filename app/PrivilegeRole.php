@@ -21,4 +21,14 @@ class PrivilegeRole extends Model
         'fieldname',
     ];
     */
+
+    public function sys_privileges()
+    {
+        return $this->belongsTo('App\Privilege', 'id_sys_privileges');
+    }
+
+    public function sys_modules()
+    {
+        return $this->belongsTo('App\Module', 'id_sys_modules');
+    }
 }
