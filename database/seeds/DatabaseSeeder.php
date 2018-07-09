@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
 
             sys_modules::class,
             sys_privileges::class,
+            sys_privileges_roles::class,
             
             mrr_building::class,
             mrr_meeting_room::class,
